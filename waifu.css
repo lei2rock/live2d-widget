@@ -37,6 +37,12 @@
 	transform: translateY(0);
 }
 
+@media (max-width: 768px) {
+	#waifu {
+		display: none;
+	}
+}
+
 #waifu-tips {
 	animation: shake 50s ease-in-out 5s infinite;
 	background-color: rgba(236, 217, 188, .5);
@@ -65,6 +71,14 @@
 #waifu-tips span {
 	color: #0099cc;
 }
+
+/* Darkmode Begin */
+@media (prefers-color-scheme: dark) {
+	#waifu-tips span {
+		color: greenyellow;
+	}
+}
+/* Darkmode End */
 
 #waifu #live2d {
 	cursor: grab;
